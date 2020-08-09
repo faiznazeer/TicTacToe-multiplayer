@@ -31,11 +31,24 @@
 	<div class="endgame">
 		<div class="text"></div>
 	</div>
-    <div class = "selectSym">
-    <p>Select symbol for Player One</p>
-      <button onClick="selectSym('X')">X</button>
-      <button onClick="selectSym('O')">O</button>
-    </div>
+	<div>
+		<div class="selectGame">
+			<p>Choose the format</p>
+			<button onClick="selectGame(1)">Singleplayer</button>
+			<button onClick="selectGame(2)">Multiplayer</button>
+		</div>
+		<div class = "selectSym selectSym1">
+			<p>Select Symbol:</p>
+				<button onClick="selectSym1('X')">X</button>
+				<button onClick="selectSym1('O')">O</button>
+		</div>
+		<div class = "selectSym selectSym2">
+			<p>Select Symbol:</p>
+				<button onClick="selectSym2('X')">X</button>
+				<button onClick="selectSym2('O')">O</button>
+			</div>
+	</div>
+
 	<button class="new-game" onClick="startGame()">New Game</button>
 
   <script src="script.js"></script>
